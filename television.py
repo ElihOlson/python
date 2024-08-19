@@ -5,6 +5,9 @@ class Television:
     MAX_CHANNEL = 3 
 
     def __init__(self):
+        '''
+        Help on function power in module __main__:
+        '''
         self.__status = False
         self.__muted = False
         self.__channel = Television.MIN_CHANNEL
@@ -81,3 +84,4 @@ class Television:
             return f'Power = {self.__status}, Channel = {self.__channel}, Volume = {Television.MIN_VOLUME}'
         else:
             return f'Power = {self.__status}, Channel = {self.__channel}, Volume = {self.__volume}'
+    print(help(__str__))
